@@ -26,7 +26,7 @@ class PLHelper
             var rgName = "Training";    // name of resource group that contains the data factory
 
             // run pipeline
-            var response = await adfClient.Pipelines.CreateRunWithHttpMessagesAsync(rgName, adfName, "SQLtoBlob");
+            var response = await adfClient.Pipelines.CreateRunWithHttpMessagesAsync(rgName, adfName, "SQLtoBlob1");
             string runId = response.Body.RunId;
 
             // wait for pipeline to finish
