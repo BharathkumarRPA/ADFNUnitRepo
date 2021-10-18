@@ -6,7 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 
 class PLHelper
-    {
+{
     public string PipelineOutcome { get; private set; }
 
     public async Task RunPipeline()
@@ -44,6 +44,4 @@ class PLHelper
     {
         PipelineOutcome = "Unknown";
     }
-
 }
-
