@@ -36,6 +36,7 @@ class PLHelper
                 Thread.Sleep(2000);
                 run = await adfClient.PipelineRuns.GetAsync(rgName, adfName, runId);
             }
+            // Assign outcome
             PipelineOutcome = run.Status;
         }
     }
@@ -45,3 +46,4 @@ class PLHelper
         PipelineOutcome = "Unknown";
     }
 }
+
