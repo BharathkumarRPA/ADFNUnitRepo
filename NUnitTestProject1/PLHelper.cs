@@ -36,7 +36,7 @@ class PLHelper
                 Thread.Sleep(2000);
                 run = await adfClient.PipelineRuns.GetAsync(rgName, adfName, runId);
             }
-            // Assign pipeline outcome value
+            // Assign pipeline result value
             PipelineOutcome = run.Status;
         }
     }
